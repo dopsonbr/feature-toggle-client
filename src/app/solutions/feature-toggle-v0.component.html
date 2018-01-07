@@ -6,3 +6,14 @@
     <button type="submit" class="btn btn-success">Get</button>
   </div>
 </form>
+<li *ngFor="let toggle of storeFeatureToggles">{{toggle}} </li>
+
+export class StoreFeatureToggleRequest {
+storeNumber = 9798;
+environmentName = 'acceptance';
+productName = 'sell';
+}
+
+export const environments = ['development', 'accepted', 'staging', 'production'];
+
+export const products = ['sell', 'release', 'fulfillment'];

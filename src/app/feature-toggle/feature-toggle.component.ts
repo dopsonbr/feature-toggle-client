@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import {Observable} from 'rxjs/Observable';
+
 
 @Component({
   selector: 'app-feature-toggle',
@@ -14,27 +14,13 @@ export class FeatureToggleComponent implements OnInit {
     environment: new FormControl(),
     product: new FormControl()
   });
-  storeFeatureToggles: string[];
 
   constructor() { }
 
   ngOnInit() {
-    this.getStoreFeatureToggles();
+
   }
 
   getStoreFeatureToggles() {
-      this.storeFeatureToggles = [
-        'SPOS',
-        'pilot',
-        'DELIVERY',
-        'PICKUP',
-        'discount-engine',
-        'TaxExempt',
-        'InventoryOverride',
-        'ChangePalletCount',
-        'ChangeTruckType',
-        'DeliveryChargeMarkdown',
-        'NewDeliveryUI'
-      ];
   }
 }
