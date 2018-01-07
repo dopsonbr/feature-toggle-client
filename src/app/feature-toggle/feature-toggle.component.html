@@ -1,0 +1,13 @@
+<form>
+  <input type="number" id="storeNumber" required value=9798>
+  <input type="text" id="environmentName" required value="accepted">
+  <input type="text" id="productName" required value="sell">
+  <button id="getStoreFeatureToggles" (click)="getStoreFeatureToggles()" class="button primary">Check</button>
+</form>
+<h4>Store Feature Toggles</h4>
+<li *ngFor="let toggle of storeFeatureToggles">{{toggle}} </li>
+
+
+<form [formGroup]="storeFeaturesToggleForm" novalidate>
+
+</form>

@@ -1,0 +1,13 @@
+[
+  "SPOS",
+  "pilot",
+  "DELIVERY",
+  "PICKUP",
+  "TaxExempt",
+  "discount-engine",
+  "InventoryOverride",
+  "ChangePalletCount",
+  "ChangeTruckType",
+  "DeliveryChargeMarkdown",
+  "NewDeliveryUI"
+]
