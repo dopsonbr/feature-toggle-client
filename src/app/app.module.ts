@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FeatureToggleComponent } from './feature-toggle/feature-toggle.component';
 import {FeatureToggleService} from './feature-toggle/feature-toggle-service';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -14,9 +15,10 @@ import {FeatureToggleService} from './feature-toggle/feature-toggle-service';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [FeatureToggleService],
+  providers: [FeatureToggleService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

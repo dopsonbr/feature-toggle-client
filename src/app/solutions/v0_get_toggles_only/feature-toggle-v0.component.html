@@ -1,0 +1,12 @@
+<form [formGroup]="storeFeatureTogglesForm" (ngSubmit)="getStoreFeatureToggles()" novalidate>
+  <table>
+    <tr> <td>Store Number</td><td>Environment</td> <td>Product team</td></tr>
+    <tr>
+      <td><input class="form-control" formControlName="storeNumber"></td>
+      <td><input class="form-control" formControlName="environment"></td>
+      <td><input class="form-control" formControlName="productTeam"></td>
+      <td><button type="submit" >Get</button></td>
+    </tr>
+  </table>
+</form>
+<li *ngFor="let toggle of storeFeatureToggles | async">{{toggle}}</li>
